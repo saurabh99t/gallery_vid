@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f1f1f1;
+  padding: 20px;
+  font-family: Arial;
+}
+
+/* Center website */
+.main {
+width: 100%;
+  margin: auto;
+}
+
+h1 {
+  font-size: 50px;
+  word-break: break-all;
+}
+
+.row {
+    /* background-color: aquamarine; */
+  margin: 10px -16px;
+  justify-content: center;
+  align-items: center;
+ 
+}
+
+.colum{
+    display: flex;
+    /* background-color: aquamarine; */
+  /* margin: 10px -16px; */
+  justify-content: center;
+  align-items: center;
+  height: 40vh;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+    align-items: center;
+  float: left;
+  width: 20%;
+
+  height: 35vh;
+  margin-bottom: 20px;
+
+  
+/* Hide all elements by default */
+}
+
+/* Clear floats after rows */ 
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+.content{
+    /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;     */
+    border-bottom:2px solid rgb(0, 191, 255);
+}
+
+
+.column :hover{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.column{
+ 
+
+   /* margin-bottom: 20px; */
+    line-height: 0px;
+}
+/* Content */
+.content {
+    
+  background-color: white;
+  padding-bottom: 22px;
+  text-align: center;
+  
+}
+
+
+.content img{
+    height: 80%;
+    width: 100%;
+}
+
+/* The "show" class is added to the filtered elements */
+.show {
+  display: block;
+}
+
+/* Style the buttons */
+.btn {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: white;
+  cursor: pointer;
+}
+
+.btnn{
+   text-align: center;
+  
+}
+
+.btnn button{
+    background-color: rgb(43, 138, 255);
+    color: white;
+    padding:10px 15px;
+    border-radius: 8px;
+    outline: none;
+    border: none;
+    font-size: 10px;
+}
+
+
+.btnnn{
+    text-align: center;
+}
+
+.btnnn button{
+    background-color: rgb(43, 138, 255);
+    color: white;
+    padding:10px 15px;
+    border-radius: 8px;
+    font-size: 10px;
+    outline: none;
+    border: none;
+}
+.btnn :hover{
+    background-color: rgb(7, 115, 248);
+}
+
+
+.btnnn :hover{
+    background-color: rgb(7, 115, 248);
+}
+
+.btn:hover {
+  background-color: #ddd;
+}
+
+.btn.active {
+  background-color: #666;
+  color: white;
+}
+
+
+
+.Our_Gallery{
+text-align: center;
+}
+
+
+/* ------------------------- */
+
+.columnn {
+      width: 19%;
+      float: left;
+      padding: 10px;
+      box-sizing: border-box;
+      margin-right: 10px;
+      background-color: rgb(236, 236, 236);
+      border-bottom: 3px solid rgb(0, 191, 255);
+      
+    }
+
+
+    .colum :hover{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+    .video-container {
+       
+      position: relative;
+      padding-bottom: 56.25%; 
+      /* 16:9 aspect ratio (change as needed) */
+    
+    }
+
+    .video-container video {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+
+    }
+
+
+
+    @media (max-width: 1062px) {
+      .columnn {
+        padding: 20px;
+        width: 100%; /* Full width for smaller screens */
+        margin-bottom: 50px;
+      }
+
+      .colum{
+        display: block;
+        height: 35vh;
+      }
+    }
+
+
+
+
+@media (max-width:1024) {
+    
+}
+
+@media(max-width:1062px) {
+
+    body{
+        padding: 0px;
+    }
+    .row{
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    .column {
+    float: left;
+    width: 95%;
+    height: 100%;
+    margin-bottom: 20px ;
+    
+    /* padding: 0; */
+}
+
+
+
+.content{
+width: 100%;
+padding: 10px 10px 0 10px;
+/* height: 36vh; */
+}
+
+
+}
+
+
+
+
+</style>
+</head>
+<body>
+
+<!-- MAIN (Center website) -->
+<div class="main">
+
+<!-- <h1>Image gallwery</h1> -->
+<!-- <hr> -->
+
+<div class="Our_Gallery">
+    <h2>Our gallery</h2>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis, quos</p>
+</div>
+
+
+<!-- <div id="myBtnContainer">
+  <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+  <button class="btn" onclick="filterSelection('nature')"> Nature</button>
+  <button class="btn" onclick="filterSelection('cars')"> Cars</button>
+  <button class="btn" onclick="filterSelection('people')"> People</button>
+</div> -->
+
+<!-- Portfolio Gallery Grid -->
+<div class="row">
+  <div class="column nature">
+    <div class="content">
+      <img src="/pxfuelll.jpg" alt="Mountains" >
+      <p>Mountains</p>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+  </div>
+
+  <div class="column nature">
+    <div class="content">
+      <img src="/pxfuelll.jpg" alt="Mountains" >
+      <p>Mountains</p>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+  </div>
+
+  <div class="column nature">
+    <div class="content">
+      <img src="/pxfuelll.jpg" alt="Mountains" >
+      <p>Mountains</p>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+  </div>
+
+  <div class="column nature">
+    <div class="content">
+    <img src="/pxfuelll.jpg" alt="Lights" >
+      <p>Lights</p>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+  </div>
+  <div class="column nature">
+    <div class="content">
+    <img src="/pxfuelll.jpg" alt="Nature" >
+      <p>Forest</p>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+  </div>
+  
+  <div class="column cars">
+    <div class="content">
+      <img src="/pxfuelll.jpg" alt="Car" >
+      <p>Retro</p>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+  </div>
+  <div class="column cars">
+    <div class="content">
+    <img src="/pxfuelll.jpg" alt="Car" >
+      <p>Fast</p>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+  </div>
+  <div class="column cars">
+    <div class="content">
+    <img src="/pxfuelll.jpg" alt="Car" >
+      <p>Classic</p>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+  </div>
+
+  <div class="column people">
+    <div class="content">
+      <img src="/pxfuelll.jpg" alt="Car" >
+      <p>Girl</p>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+  </div>
+  <div class="column people">
+    <div class="content">
+    <img src="/pxfuelll.jpg" alt="Car" >
+      <p>Man</p>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+  </div>
+
+
+  <div class="btnn">
+    <button>Show More</button>
+  </div>
+ 
+<!-- END GRID -->
+</div>
+
+
+
+
+<div class="colum">
+
+
+
+<div class="columnn">
+    <div class="video-container">
+      <video src="video1.mp4" controls></video>
+    </div>
+    
+    <div class="para">
+        <p>Write here</p>
+    </div>
+  </div>
+
+
+  <div class="columnn">
+    <div class="video-container">
+      <video src="video2.mp4" controls></video>
+    </div>
+    <div class="para">
+        <p>Write here</p>
+    </div>
+  </div>
+
+
+  <div class="columnn">
+    <div class="video-container">
+      <video src="video3.mp4" controls></video>
+    </div>
+    <div class="para">
+        <p>Write here</p>
+    </div>
+  </div>
+
+
+  <div class="columnn">
+    <div class="video-container">
+      <video src="video4.mp4" controls></video>
+    </div>
+    <div class="para">
+        <p>Write here</p>
+    </div>
+  </div>
+
+
+  <div class="columnn">
+    <div class="video-container">
+      <video src="video5.mp4" controls></video>
+    </div>
+    <div class="para">
+        <p>Write here</p>
+    </div>
+  </div>
+
+</div>
+
+
+
+<!-- END MAIN -->
+</div>
+
+<div class="btnnn">
+    <button>See More</button>
+  </div>
+
+  
+
+</body>
+</html>
